@@ -54,10 +54,10 @@
         </header>
 
         <!-- Main Content Area -->
-        <main id="app-content" class="flex-1 overflow-y-auto overflow-x-hidden relative scroll-smooth pb-20"></main>
+        <main id="app-content" class="flex-1 overflow-y-auto overflow-x-hidden relative scroll-smooth pb-32"></main>
 
-        <!-- Bottom Navigation -->
-        <nav id="bottom-nav" class="hidden absolute bottom-0 w-full bg-white/90 dark:bg-darkCard/90 backdrop-blur-lg border-t border-gray-100 dark:border-gray-800 px-6 py-3 flex justify-between items-center z-50 rounded-t-2xl shadow-[0_-10px_40px_rgba(0,0,0,0.05)] transition-transform duration-300">
+        <!-- Bottom Navigation (Floating) -->
+        <nav id="bottom-nav" class="hidden absolute bottom-6 left-4 right-4 bg-white/95 dark:bg-darkCard/95 backdrop-blur-xl border border-gray-100 dark:border-gray-800 px-6 py-3 flex justify-between items-center z-50 rounded-3xl shadow-2xl transition-transform duration-300">
             <button class="nav-item active flex flex-col items-center gap-1 text-primary transition-colors" data-target="home">
                 <i class="fas fa-home text-xl"></i>
                 <span class="text-[10px] font-medium">Home</span>
@@ -88,6 +88,6 @@
     <!-- Modals Container -->
     <div id="modal-container"></div>
 
-    <script src="js/app.js?v=2" type="module"></script>
+    <script src="js/app.js?v=3" type="module"></script>
 </body>
 </html>

@@ -20,12 +20,5 @@
     "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&q=80",
     "description": "Gateway to the Sahara Desert, perfect for camel treks and stargazing.",
     "category": ["Desert", "Adventure"]
-  },
-  {
-    "id": 5,
-    "name": "Essaouira",
-    "image": "https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=80",
-    "description": "A coastal wind city popular for surfing and fresh seafood.",
-    "category": ["Beach", "Food"]
   }
 ]
