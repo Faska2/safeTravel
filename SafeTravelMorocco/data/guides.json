@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "city_id": 1,
+    "name": "Youssef",
+    "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=400&fit=crop",
+    "languages": ["English", "French", "Arabic"],
+    "rating": 4.9,
+    "reviews": 124
+  },
+  {
+    "id": 2,
+    "city_id": 3,
+    "name": "Amina",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=400&fit=crop",
+    "languages": ["English", "Spanish", "Arabic"],
+    "rating": 4.8,
+    "reviews": 89
+  },
+  {
+    "id": 3,
+    "city_id": 2,
+    "name": "Hassan",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+    "languages": ["French", "Spanish", "Arabic"],
+    "rating": 4.7,
+    "reviews": 56
+  }
+]

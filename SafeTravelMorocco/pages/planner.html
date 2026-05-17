@@ -1,0 +1,57 @@
+<div class="px-6 py-4 pb-10 fade-in">
+    <div class="mb-6">
+        <h2 class="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-2">Smart Planner <i class="fas fa-magic text-primary"></i></h2>
+        <p class="text-gray-500 text-sm">Let AI design your perfect Moroccan trip based on your budget and interests.</p>
+    </div>
+
+    <form id="budget-form" class="space-y-5">
+        <!-- Budget -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Total Budget (USD)</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <span class="text-gray-500">$</span>
+                </div>
+                <input type="number" id="budget-input" required placeholder="1000" class="block w-full pl-8 pr-4 py-3 bg-white dark:bg-darkCard border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow text-gray-900 dark:text-white shadow-soft">
+            </div>
+        </div>
+
+        <!-- Duration -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Duration (Days)</label>
+            <input type="range" min="1" max="30" value="7" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 accent-primary" oninput="document.getElementById('days-output').innerText = this.value + ' Days'">
+            <div class="text-right text-sm font-semibold text-primary mt-1" id="days-output">7 Days</div>
+        </div>
+
+        <!-- Interests -->
+        <div>
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Interests</label>
+            <div class="flex flex-wrap gap-2">
+                <label class="cursor-pointer">
+                    <input type="checkbox" class="peer sr-only">
+                    <div class="px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">Culture</div>
+                </label>
+                <label class="cursor-pointer">
+                    <input type="checkbox" class="peer sr-only" checked>
+                    <div class="px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">Food</div>
+                </label>
+                <label class="cursor-pointer">
+                    <input type="checkbox" class="peer sr-only">
+                    <div class="px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">Desert</div>
+                </label>
+                <label class="cursor-pointer">
+                    <input type="checkbox" class="peer sr-only">
+                    <div class="px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">Beach</div>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="w-full bg-gray-900 dark:bg-white dark:text-gray-900 text-white font-semibold py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2 mt-4">
+            <i class="fas fa-bolt"></i> Generate Trip
+        </button>
+    </form>
+
+    <div id="budget-result" class="hidden">
+        <!-- Results injected via JS -->
+    </div>
+</div>

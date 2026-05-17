@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "city_id": 1,
+    "name": "Nomad",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",
+    "price_range": "$$",
+    "rating": 4.6,
+    "cuisine": "Modern Moroccan"
+  },
+  {
+    "id": 2,
+    "city_id": 3,
+    "name": "Cafe Clock",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop",
+    "price_range": "$",
+    "rating": 4.5,
+    "cuisine": "Fusion"
+  },
+  {
+    "id": 3,
+    "city_id": 5,
+    "name": "Taros",
+    "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=400&fit=crop",
+    "price_range": "$$",
+    "rating": 4.4,
+    "cuisine": "Seafood & Tapas"
+  }
+]

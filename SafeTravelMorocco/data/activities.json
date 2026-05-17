@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "city_id": 1,
+    "name": "Hot Air Balloon Ride",
+    "image": "https://images.unsplash.com/photo-1541814674757-1110e52701f7?w=600&h=400&fit=crop",
+    "price": 150,
+    "duration": "3 hours",
+    "category": "Adventure"
+  },
+  {
+    "id": 2,
+    "city_id": 3,
+    "name": "Medina Walking Tour",
+    "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop",
+    "price": 30,
+    "duration": "4 hours",
+    "category": "Culture"
+  },
+  {
+    "id": 3,
+    "city_id": 4,
+    "name": "Camel Trekking & Sandboarding",
+    "image": "https://images.unsplash.com/photo-1502013898083-d5861b5f7e44?w=600&h=400&fit=crop",
+    "price": 60,
+    "duration": "5 hours",
+    "category": "Desert"
+  },
+  {
+    "id": 4,
+    "city_id": 5,
+    "name": "Kite Surfing Lesson",
+    "image": "https://images.unsplash.com/photo-1520116468816-95b69f847357?w=600&h=400&fit=crop",
+    "price": 45,
+    "duration": "2 hours",
+    "category": "Beach"
+  }
+]

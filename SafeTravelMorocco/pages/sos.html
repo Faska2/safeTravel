@@ -1,0 +1,60 @@
+<div class="px-6 py-4 pb-10 fade-in h-full flex flex-col items-center">
+    
+    <div class="text-center mb-8">
+        <h2 class="text-2xl font-heading font-bold text-gray-900 dark:text-white">Emergency Center</h2>
+        <p class="text-gray-500 text-sm mt-2">Only use in case of real emergency</p>
+    </div>
+
+    <!-- Big SOS Button -->
+    <div class="relative mb-12 mt-4">
+        <div class="absolute inset-0 bg-red-500/20 rounded-full sos-pulse"></div>
+        <button class="relative w-48 h-48 bg-gradient-to-b from-red-500 to-red-600 rounded-full text-white shadow-[0_10px_30px_rgba(239,68,68,0.4)] border-4 border-white dark:border-darkBg flex flex-col items-center justify-center active:scale-95 transition-transform z-10" onclick="alert('Mock: Sending location to tourist police...')">
+            <i class="fas fa-exclamation-triangle text-4xl mb-2"></i>
+            <span class="font-heading font-bold text-3xl tracking-widest">SOS</span>
+        </button>
+    </div>
+
+    <div class="w-full space-y-4">
+        <!-- Tourist Police -->
+        <div class="glass-card p-4 flex items-center justify-between border-l-4 border-blue-500 hover:bg-gray-50 dark:hover:bg-darkCard cursor-pointer transition-colors">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center text-lg">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Tourist Police</h4>
+                    <p class="text-xs text-gray-500">Dial 190</p>
+                </div>
+            </div>
+            <button class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 flex items-center justify-center">
+                <i class="fas fa-phone"></i>
+            </button>
+        </div>
+
+        <!-- Ambulance -->
+        <div class="glass-card p-4 flex items-center justify-between border-l-4 border-red-500 hover:bg-gray-50 dark:hover:bg-darkCard cursor-pointer transition-colors">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-lg">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Ambulance & Fire</h4>
+                    <p class="text-xs text-gray-500">Dial 15</p>
+                </div>
+            </div>
+            <button class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 flex items-center justify-center">
+                <i class="fas fa-phone"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Share Location -->
+    <div class="w-full mt-auto glass-card p-4 flex items-center gap-3 cursor-pointer hover:border-primary transition-colors">
+        <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+        <div class="flex-1">
+            <h4 class="font-medium text-sm text-gray-800 dark:text-gray-200">Share Live Location</h4>
+            <p class="text-[10px] text-gray-500">Send coordinates to contacts</p>
+        </div>
+        <i class="fas fa-chevron-right text-gray-400"></i>
+    </div>
+</div>

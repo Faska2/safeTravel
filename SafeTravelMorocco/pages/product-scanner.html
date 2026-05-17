@@ -1,0 +1,65 @@
+<div class="px-6 py-4 pb-10 fade-in">
+    <div class="mb-6">
+        <h2 class="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-2">Price Checker <i class="fas fa-tag text-primary"></i></h2>
+        <p class="text-gray-500 text-sm">Scan an item in the souk to get a fair price estimate to help you bargain.</p>
+    </div>
+
+    <!-- Scanner Area -->
+    <div class="relative w-full h-64 bg-gray-100 dark:bg-darkCard rounded-2xl overflow-hidden mb-6 flex items-center justify-center cursor-pointer hover:shadow-lg transition-shadow border-2 border-dashed border-gray-300 dark:border-gray-600">
+        <div class="text-center" id="scan-trigger" onclick="document.getElementById('fake-scan').classList.remove('hidden'); setTimeout(() => { document.getElementById('fake-scan').classList.add('hidden'); document.getElementById('price-result').classList.remove('hidden'); }, 2000);">
+            <div class="w-16 h-16 bg-white dark:bg-darkBg rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                <i class="fas fa-camera text-2xl text-primary"></i>
+            </div>
+            <p class="font-medium text-gray-600 dark:text-gray-400">Tap to Scan Item</p>
+        </div>
+        
+        <!-- Fake Scan Animation -->
+        <div id="fake-scan" class="hidden absolute inset-0 bg-black/80 flex items-center justify-center z-10">
+            <div class="w-48 h-48 border-2 border-primary rounded-xl relative">
+                <div class="scan-line"></div>
+            </div>
+            <p class="absolute bottom-4 text-white text-sm animate-pulse">Analyzing object...</p>
+        </div>
+    </div>
+
+    <!-- Result Area -->
+    <div id="price-result" class="hidden glass-card p-5 slide-up relative overflow-hidden">
+        <div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
+        
+        <div class="flex gap-4 items-center mb-6">
+            <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center text-3xl">
+                🏺
+            </div>
+            <div>
+                <h3 class="font-heading font-semibold text-lg text-gray-900 dark:text-white">Leather Bag / Pottery</h3>
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">High Confidence</span>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <div>
+                <div class="flex justify-between text-sm mb-1">
+                    <span class="text-gray-500">Tourist Starting Price</span>
+                    <span class="font-semibold text-red-500">~ 400 MAD</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+                    <div class="bg-red-400 h-1.5 rounded-full" style="width: 100%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between text-sm mb-1">
+                    <span class="text-gray-500">Fair Local Price</span>
+                    <span class="font-semibold text-primary">150 - 200 MAD</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+                    <div class="bg-primary h-1.5 rounded-full" style="width: 45%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 dark:border-blue-800 flex gap-3">
+            <i class="fas fa-lightbulb text-blue-500 mt-0.5"></i>
+            <p class="text-xs text-blue-800 dark:text-blue-300">Tip: Start offering at 120 MAD and walk away if they don't drop below 250 MAD.</p>
+        </div>
+    </div>
+</div>

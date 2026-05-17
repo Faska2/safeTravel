@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Marrakech",
+    "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdce?w=600&h=400&fit=crop",
+    "description": "The Red City, known for its vibrant souks, palaces, and gardens.",
+    "category": ["Culture", "History"]
+  },
+  {
+    "id": 2,
+    "name": "Chefchaouen",
+    "image": "https://images.unsplash.com/photo-1555546271-925a1e74a623?w=600&h=400&fit=crop",
+    "description": "The Blue Pearl of Morocco, famous for its blue-washed buildings.",
+    "category": ["Culture", "Adventure"]
+  },
+  {
+    "id": 3,
+    "name": "Fes",
+    "image": "https://images.unsplash.com/photo-1552554746-bda50b07e781?w=600&h=400&fit=crop",
+    "description": "The cultural capital, home to the oldest university and intricate medinas.",
+    "category": ["Culture", "History", "Food"]
+  },
+  {
+    "id": 4,
+    "name": "Merzouga",
+    "image": "https://images.unsplash.com/photo-1522008342704-6b265b543c46?w=600&h=400&fit=crop",
+    "description": "Gateway to the Sahara Desert, perfect for camel treks and stargazing.",
+    "category": ["Desert", "Adventure"]
+  },
+  {
+    "id": 5,
+    "name": "Essaouira",
+    "image": "https://images.unsplash.com/photo-1577963339031-7b79788f4bba?w=600&h=400&fit=crop",
+    "description": "A coastal wind city popular for surfing and fresh seafood.",
+    "category": ["Beach", "Food"]
+  }
+]

@@ -1,0 +1,106 @@
+<div class="pb-10 fade-in">
+    <!-- Hero Section -->
+    <div class="px-6 pt-6 pb-4">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Hello, Traveler 👋</p>
+                <h2 class="text-2xl font-heading font-bold text-gray-900 dark:text-white">Discover Morocco Smartly</h2>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden cursor-pointer action-card" data-action="profile">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative glass-card shadow-soft mb-6 flex items-center px-4 py-3 cursor-text">
+            <i class="fas fa-search text-gray-400 mr-3"></i>
+            <input type="text" placeholder="Where to?" class="bg-transparent w-full outline-none text-gray-700 dark:text-gray-200 placeholder-gray-400">
+            <div class="absolute right-2 top-2 p-1.5 bg-primary/10 rounded-lg text-primary">
+                <i class="fas fa-sliders-h"></i>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+            <div class="flex flex-col items-center gap-2 min-w-[60px] cursor-pointer group">
+                <div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-300">Culture</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 min-w-[60px] cursor-pointer group">
+                <div class="w-14 h-14 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center text-xl group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-300">Beach</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 min-w-[60px] cursor-pointer group">
+                <div class="w-14 h-14 rounded-full bg-orange-100 text-orange-500 flex items-center justify-center text-xl group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-300">Food</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 min-w-[60px] cursor-pointer group">
+                <div class="w-14 h-14 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center text-xl group-hover:bg-yellow-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-300">Desert</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Tools Grid -->
+    <div class="px-6 mb-8 grid grid-cols-2 gap-4">
+        <div class="glass-card p-4 flex flex-col items-start gap-2 action-card cursor-pointer hover:border-primary transition-colors" data-action="translation">
+            <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-500 flex items-center justify-center">
+                <i class="fas fa-language text-lg"></i>
+            </div>
+            <h3 class="font-semibold text-sm">Translate</h3>
+            <p class="text-[10px] text-gray-500">Voice & Text</p>
+        </div>
+        <div class="glass-card p-4 flex flex-col items-start gap-2 action-card cursor-pointer hover:border-primary transition-colors" data-action="transportation">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-500 flex items-center justify-center">
+                <i class="fas fa-car text-lg"></i>
+            </div>
+            <h3 class="font-semibold text-sm">Transport</h3>
+            <p class="text-[10px] text-gray-500">Book & Prices</p>
+        </div>
+        <div class="glass-card p-4 flex flex-col items-start gap-2 action-card cursor-pointer hover:border-primary transition-colors" data-action="guides">
+            <div class="w-10 h-10 rounded-full bg-purple-100 text-purple-500 flex items-center justify-center">
+                <i class="fas fa-user-friends text-lg"></i>
+            </div>
+            <h3 class="font-semibold text-sm">Guides</h3>
+            <p class="text-[10px] text-gray-500">Local Experts</p>
+        </div>
+        <div class="glass-card p-4 flex flex-col items-start gap-2 action-card cursor-pointer hover:border-red-500 transition-colors" data-action="sos">
+            <div class="w-10 h-10 rounded-full bg-red-100 text-red-500 flex items-center justify-center">
+                <i class="fas fa-shield-alt text-lg"></i>
+            </div>
+            <h3 class="font-semibold text-sm">SOS Safety</h3>
+            <p class="text-[10px] text-gray-500">Emergency</p>
+        </div>
+    </div>
+
+    <!-- Featured Destinations -->
+    <div class="mb-8">
+        <div class="px-6 flex justify-between items-end mb-4">
+            <h2 class="text-xl font-heading font-semibold text-gray-900 dark:text-white">Featured</h2>
+            <span class="text-primary text-sm font-medium cursor-pointer hover:underline">See all</span>
+        </div>
+        <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory pr-6" id="featured-carousel">
+            <!-- Skeletons -->
+            <div class="flex-shrink-0 w-64 h-80 rounded-2xl skeleton ml-4 snap-center"></div>
+            <div class="flex-shrink-0 w-64 h-80 rounded-2xl skeleton ml-4 snap-center"></div>
+        </div>
+    </div>
+
+    <!-- Popular Cities -->
+    <div class="px-6">
+        <h2 class="text-xl font-heading font-semibold text-gray-900 dark:text-white mb-4">Popular Cities</h2>
+        <div id="popular-list">
+            <!-- Skeletons -->
+            <div class="h-24 skeleton mb-4"></div>
+            <div class="h-24 skeleton mb-4"></div>
+        </div>
+    </div>
+</div>
