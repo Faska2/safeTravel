@@ -17,6 +17,9 @@ const App = {
         this.applyTheme();
         this.setupNavigation();
         
+        // Preload data
+        await this.loadData();
+
         // Initial route
         const isFirstVisit = !localStorage.getItem('visited');
         if (isFirstVisit) {
@@ -24,9 +27,6 @@ const App = {
         } else {
             this.navigate('home');
         }
-        
-        // Preload data in background
-        this.loadData();
     },
 
     applyTheme: function() {
@@ -46,11 +46,11 @@ const App = {
     async loadData() {
         try {
             const [cities, hotels, restaurants, activities, guides] = await Promise.all([
-                fetch('data/cities.json').then(r => r.json()),
-                fetch('data/hotels.json').then(r => r.json()),
-                fetch('data/restaurants.json').then(r => r.json()),
-                fetch('data/activities.json').then(r => r.json()),
-                fetch('data/guides.json').then(r => r.json())
+                fetch('data/cities.json?v=2').then(r => r.json()),
+                fetch('data/hotels.json?v=2').then(r => r.json()),
+                fetch('data/restaurants.json?v=2').then(r => r.json()),
+                fetch('data/activities.json?v=2').then(r => r.json()),
+                fetch('data/guides.json?v=2').then(r => r.json())
             ]);
             
             this.state.data = { cities, hotels, restaurants, activities, guides };
@@ -149,7 +149,7 @@ const App = {
 
         // Render Page (Using fetch to get HTML, fallback to generating JS if CORS fails)
         try {
-            const response = await fetch(`pages/${page}.html`);
+            const response = await fetch(`pages/${page}.html?v=2`);
             if (response.ok) {
                 const html = await response.text();
                 contentArea.innerHTML = html;
